@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>ES6</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- font awsome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awsome   -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+        <div class="container">
+           <!----------------- BÀI TẬP 1  -------------------->
+        <h3>BÀI TẬP 1: THÔNG BÁO ĐẾN NGƯỜI DÙNG SÔ ĐƯỢC CLICK</h3>
+        <button class="btn btn-success">1</button>
+        <button class="btn btn-success">2</button>
+        <button class="btn btn-success">3</button>
+        <hr>
+        <!----------------- BÀI TẬP 2  -------------------->
+        <h3>BÀI TẬP 2: THAY ĐỔI MÀU SẮC KHI CLICK VÀO TỪNG BUTTON</h3>
+        <div id="house">
+            <i style="font-size: 100px" id="house-icon"class="fas fa-laptop-house mb-3"></i>
+            <div id="arrButton"></div>
+        </div>
+        <hr>
+        <!----------------- BÀI TẬP 3  -------------------->
+        <h3>BÀI TẬP 3: SỬ DỤNG RESTPARAM TÍNH ĐIỂM TRUNG BÌNH</h3>
+        <div class="row">
+          <!-- Column 1  -->
+          <div class="col-6" id="form-khoi1">
+            <h4 class="bg-dark text-white text-center p-2">KHỐI 1</h4>
+            <div class="form-group">
+              <p class="bg-success text-white text-center">TOÁN</p>
+              <input type="text" class="form-control" id="diemToan">
+            </div>
+            <div class="form-group">
+              <p class="bg-success text-white text-center">LÝ</p>
+              <input type="text" class="form-control" id="diemLy">
+            </div>
+            <div class="form-group">
+              <p class="bg-success text-white text-center">HÓA</p>
+              <input type="text" class="form-control" id="diemHoa">
+            </div>
+            <div class="form-group">
+              <button class="btn btn-success" id="btn-tinhDiem1">TÍNH ĐIỂM</button>
+            </div>
+            <h5 class="bg-primary text-white text-center p-2" id="diemTBKhoi1">0.0</h5>
+          </div>
+          <!-- Column 2  -->
+          <div class="col-6 form-khoi2" id="form-khoi2">
+            <h4 class="bg-dark text-white text-center p-2">KHỐI 2</h4>
+            <div class="form-group">
+              <p class="bg-success text-white text-center">VĂN</p>
+              <input type="text" class="form-control" id="diemToan">
+            </div>
+            <div class="form-group">
+              <p class="bg-success text-white text-center">SỬ</p>
+              <input type="text" class="form-control" id="diemLy">
+            </div>
+            <div class="form-group">
+              <p class="bg-success text-white text-center">ĐỊA</p>
+              <input type="text" class="form-control" id="diemHoa">
+            </div>
+            <div class="form-group">
+              <p class="bg-success text-white text-center">ANH VĂN</p>
+              <input type="text" class="form-control" id="diemHoa">
+            </div>
+            <div class="form-group">
+              <button class="btn btn-success" id="btn-tinhDiem2">TÍNH ĐIỂM</button>
+            </div>
+            <h5 class="bg-primary text-white text-center p-2" id="diemTBKhoi2">0.0</h5>
+          </div>
+        </div>
+        <hr>
+        <!----------------- BÀI TẬP 4  -------------------->
+        <h3>BÀI TẬP 4: TỔNG HỢP ES6</h3>
+        <form class="row">
+          <div class="col-6">
+              <h4 class="card-header bg-dark text-white">NHẬP THÔNG TIN NHÂN VIÊN</h4>
+              <div class="form-group">
+                <p>Mã nhân viên</p>
+                <input type="text" class="form-control" id="maNhanVien">
+              </div>
+              <div class="form-group">
+                <p>Tên nhân viên</p>
+                <input type="text" class="form-control" id="tenNhanVien">
+              </div>
+              <div class="form-group">
+                <p>Chức vụ</p>
+                <select class="form-control" name="chucvu" id="chucVu">
+                  <option value="Nhân viên">Nhân viên</option>
+                  <option value="Quản lí">Quản lí</option>
+                  <option value="Gims đốc">Giám đốc </option>
+                </select>
+              </div>
+              <div class="form-group">
+                <p>Lương</p>
+                <input type="text" class="form-control" id="luongCB">
+              </div>
+              <div class="form-group">
+                <button  id="btnXacNhan"type="button" class="btn btn-success">Xác nhận</button>
+              </div>
+          </div>
+          <div class="col-6">
+            <h4 class="bg-success p-2 text-white text-center">THÔNG TIN ĐƯỢC NHẬP</h4>
+            <table class="table">
+              <tbody id="tblnhanVien">
+
+              </tbody>
+
+            </table>
+          </div>
+        </form>
+      
+      
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- <script type="module" src="./ES6.js"></script> -->
+    <script type="module" src="./ThucHanh.js"></script>
+
+  </body>
+</html>
